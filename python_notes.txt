@@ -1,0 +1,32 @@
+pip install django
+django-admin startproject personal_portfolio
+cd ./django_personal_portfolio
+python manage.py blog
+python manage.py startapp portfolio
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+admin
+-----
+python manage.py createsuperuser
+chintala
+chintala3777@gmail.com
+
+python .\manage.py changepassword chintala
+qwerty@1
+
+
+MEDIA_ROOT = BASE_DIR/'media'
+
+URL.PY
+---------
+from django.conf.urls.static import static 
+from django.conf import settings
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+]
+
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
