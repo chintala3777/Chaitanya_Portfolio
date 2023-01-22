@@ -17,7 +17,7 @@ chintala3777@gmail.com
 python .\manage.py changepassword chintala
 qwerty@1
 
-
+MEDIA_URL 
 MEDIA_ROOT = BASE_DIR/'media'
 
 URL.PY
@@ -30,3 +30,46 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+git config --global user.name "John Doe"
+git config --global user.email chintala.chaitanya@yahoo.com
+
+git status
+git add -A
+git commit -m "Portfolio project commited"
+git status
+git remote add origin https://github.com/chintala3777/Chaitanya_Portfolio.git
+git branch -M main
+git push -u origin main
+
+pythonanywhere
+
+git clone https://github.com/chintala3777/Chaitanya_Portfolio.git
+
+mkvirtualenv --python=/usr/bin/python3.10 portfoliovenv
+python
+exit()
+
+exit -- venv
+workon portfoliovenv
+deactivate
+
+cd .virtualenvs/
+ls
+ pip install django pillow
+  cd ..
+  cd~
+  ls
+  add  wsgi.py
+  
+  python manage.py collectstatic
+  
+  
+  unnecessary files removal
+  manage.py should be ter for below cmd
+  
+  git rm -r --cached .
+  git add .
+  git commit -m "Removed old stuff"
+  git status
+  
