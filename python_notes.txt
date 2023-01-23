@@ -31,7 +31,7 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
-git config --global user.name "John Doe"
+git config --global user.name "chintala3777"
 git config --global user.email chintala.chaitanya@yahoo.com
 
 git status
@@ -39,6 +39,7 @@ git add -A
 git commit -m "Portfolio project commited"
 git status
 git remote add origin https://github.com/chintala3777/Chaitanya_Portfolio.git
+
 git branch -M main
 git push -u origin main
 
@@ -62,6 +63,26 @@ ls
   ls
   add  wsgi.py
   
+  # +++++++++++ DJANGO +++++++++++
+# To use your own django app use code like this:
+import os
+import sys
+
+# assuming your django settings file is at '/home/chintalach/mysite/mysite/settings.py'
+# and your manage.py is is at '/home/chintalach/mysite/manage.py'
+path = '/home/chintalach/Chaitanya_Portfolio' -- added path
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'personal_portfolio.settings' --@addded setting
+
+# then:
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
+
+
+  
   python manage.py collectstatic
   
   
@@ -73,3 +94,32 @@ ls
   git commit -m "Removed old stuff"
   git status
   
+  chintala3777/Lotus@1a
+  
+git push https://chintala3777:Lotus@1a@myrepository.biz/file.git --all 
+
+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
+
+git push origin
+chintala3777
+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
+
+git pull origin in local
+
+
+changes done in local file
+git status
+pip freeze > requirements.txt
+git status
+git add .
+git status
+git commit -m "setting changes done for local settings"
+git push origin
+
+paython anywhere server bash
+
+workon portfoliovenv
+git pull origin
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py collectstatic
